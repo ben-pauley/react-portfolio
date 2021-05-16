@@ -24,7 +24,7 @@ const NavItem = (props) => {
         {appState.objects.map((elements, index) => (
           <li className="nav-item" key={index}>
             <a
-              href={`#${props.links[index].toLowerCase()}`}
+              href={`#${props.links[index]}`}
               className={toggleActiveStyles(index)}
               onClick={() => {
                 toggleActive(index);
