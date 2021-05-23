@@ -3,7 +3,7 @@ import MouldyPotatoesImg from "../../assets/img/mouldyPotatoes.png";
 import PopcornpediaImg from "../../assets/img/popcornpedia.png";
 import NoteTakerImg from "../../assets/img/noteTaker.png";
 import WeatherDashboardImg from "../../assets/img/weatherDashboard.png";
-import EmployeeTrackerImg from "../../assets/img/employeeTracker.png";
+import BookSearchImg from "../../assets/img/bookSearch.png";
 import TeamProfileGenImg from "../../assets/img/teamProfileGen.png";
 
 const projectInfo = [
@@ -49,12 +49,12 @@ const projectInfo = [
   },
   {
     id: 5,
-    repo: "https://github.com/ben-pauley/employee-tracker",
-    deployed: "https://github.com/ben-pauley/employee-tracker",
-    img: EmployeeTrackerImg,
-    alt: "employee tracker",
-    title: "Employee Tracker",
-    descLn1: "Back-End CLI Application",
+    repo: "https://github.com/ben-pauley/google-books-search",
+    deployed: "https://bjp-book-search.herokuapp.com/search",
+    img: BookSearchImg,
+    alt: "book search",
+    title: "Google Books Search",
+    descLn1: "Full-Stack React Application",
     descLn2: "",
   },
   {
