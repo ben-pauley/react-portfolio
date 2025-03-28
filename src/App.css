@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rozha+One&display=swap");
 
-/*TODO: update all of this to use scss (maybe merge this branch and start a new one)*/
+/*TODO: update all css to scss or whatever the best modern styling tool is
+   (maybe merge this branch and start a new one)*/
 :root {
   --body-font: "Rozha One";
   --header-height: 3rem;

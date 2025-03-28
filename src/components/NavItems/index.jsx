@@ -19,8 +19,6 @@ const NavItems = (props) => {
     }
   }
 
-  // TODO: add underline animation to nav items in desktop and mobile views
-
   return (
       <div className={"nav-menu"} ref={props.toggle}>
         <ul className="nav-list">

@@ -7,17 +7,18 @@
   position: relative;
 }
 
-.nav-link:hover {
-  position: relative;
+.nav-link::after {
+  background-color: var(--primary-color);
+  left: 0;
+  top: 2rem;
+  content: "";
+  height: 0.18rem;
+  position: absolute;
+  width: 0;
+  transition: width 0.2s ease-in-out;
 }
 
 .nav-link:hover::after {
-  background-color: var(--primary-color);
-  content: "";
-  height: 0.18rem;
-  left: 0;
-  position: absolute;
-  top: 2rem;
   width: 100%;
 }
 
@@ -58,7 +59,7 @@
     position: fixed;
     right: -100%;
     top: var(--header-height);
-    transition: 0.5s;
+    transition: 0.3s;
     width: 40%;
   }
 }

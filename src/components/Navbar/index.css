@@ -8,12 +8,14 @@
 
 .nav-header {
   color: var(--secondary-color);
+  font-size: 1.3rem;
 }
 
 .nav-toggle {
+  display: flex;
   color: var(--secondary-color);
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 875px) {
@@ -25,5 +27,4 @@
   .nav-toggle {
     display: none;
   }
-
 }
