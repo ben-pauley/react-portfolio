@@ -1,9 +1,11 @@
 import CV from "../../assets/pdf/BenPauley_CV.pdf"
 import BenGreenBg from "../../assets/img/clarityShot-greenBg.png"
 import BenOrangeBg from "../../assets/img/clarityShot-orangeBg.png"
+import {useHistory} from "react-router-dom"
 import "./index.css"
 
 const Home = () => {
+  const history = useHistory()
 
   const getIntroSection = () => {
     return (
@@ -60,14 +62,21 @@ const Home = () => {
   }
 
   const getImageSection = () => {
+
+
     return (
         <div className={"home-right-content"}>
           <div className={"home-img-container"}>
-            <img src={BenGreenBg} alt={"Ben profile"} className={'home-img-content home-img-content-green'}/>
+            <img
+                src={BenGreenBg}
+                alt={"Ben profile"}
+                className={'home-img-content home-img-content-green'}
+                onClick={() => history.push("/About")}/>
             <img
                 src={BenOrangeBg}
                 alt={"Ben profile"}
                 className={'home-img-content home-img-content-orange'}
+                onClick={() => history.push("/About")}
             />
           </div>
         </div>
