@@ -1,5 +1,6 @@
 import CV from "../../assets/pdf/BenPauley_CV.pdf"
-import Ben from "../../assets/img/benCropped4.png"
+import Ben from "../../assets/img/clarityShot-greenBg.png"
+import "./index.css"
 
 const Home = () => {
   return (
@@ -13,7 +14,6 @@ const Home = () => {
 
           <a
               href={CV}
-              // TODO: replace with updated CV once CV is updated
               target="_blank"
               rel="noreferrer noopener"
               className="button"
@@ -41,9 +41,8 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="home-img">
-          <img src={Ben} alt="ben"/>
-          {/*TODO: replace with newer profile pic*/}
+        <div className="home-img-container">
+          <img src={Ben} alt="Ben profile" className={'home-img-content'}/>
         </div>
       </section>
   );

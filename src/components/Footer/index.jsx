@@ -1,14 +1,11 @@
 const Footer = () => {
   return (
-    <footer className="footer">
-      <p className="footer-title">Ben Pauley</p>
+    <footer className={"footer"}>
+      <p className={"footer-title"}>Ben Pauley</p>
 
-      <p>pauleybj@gmail.com</p>
-      <p>07123 456789</p>
+      <p className={'footer-contact-details'}>pauleybj@gmail.com</p>
 
-      <br />
-
-      <div className="footer-social">
+      <div className={"footer-social"}>
         <a
           href="https://github.com/ben-pauley"
           target="_blank"
