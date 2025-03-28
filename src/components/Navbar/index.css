@@ -1,0 +1,29 @@
+.nav {
+  align-items: center;
+  display: flex;
+  font-weight: var(--font-semi);
+  height: var(--header-height);
+  justify-content: space-between;
+}
+
+.nav-header {
+  color: var(--secondary-color);
+}
+
+.nav-toggle {
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 875px) {
+
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+}

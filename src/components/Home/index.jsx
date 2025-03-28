@@ -1,28 +1,44 @@
 import CV from "../../assets/pdf/BenPauley_CV.pdf"
-import Ben from "../../assets/img/clarityShot-greenBg.png"
+import BenGreenBg from "../../assets/img/clarityShot-greenBg.png"
+import BenOrangeBg from "../../assets/img/clarityShot-orangeBg.png"
 import "./index.css"
 
 const Home = () => {
-  return (
-      <section className="home body" id="home">
-        <div className="home-data">
-          <h1 className="home-title">
-            Hi, I'm <span className="home-title-color">Ben</span>,
+
+  const getIntroSection = () => {
+    return (
+        <div className="home-left-content">
+          <h1 className="home-intro-title">
+            Hi, I'm <span className="home-intro-title-highlighted">Ben</span>,
             <br/>
             a Software Engineer
           </h1>
+          <div className={'home-intro-buttons'}>
+            {getCVButton()}
+            {getSocialsButtons()}
+          </div>
+        </div>
+    )
+  }
 
+  const getCVButton = () => {
+    return (
+        <div className={'home-intro-button-container'}>
           <a
               href={CV}
               target="_blank"
               rel="noreferrer noopener"
-              className="button"
+              className={"cv-button button"}
           >
-            View CV
+            <span className={'cv-button-text'}>Check out my CV</span>
           </a>
         </div>
+    )
+  }
 
-        <div className="home-social">
+  const getSocialsButtons = () => {
+    return (
+        <div className="home-intro-socials">
           <a
               href="https://github.com/ben-pauley"
               target="_blank"
@@ -40,10 +56,28 @@ const Home = () => {
             <i className="bx bxl-linkedin"></i>
           </a>
         </div>
+    )
+  }
 
-        <div className="home-img-container">
-          <img src={Ben} alt="Ben profile" className={'home-img-content'}/>
+  const getImageSection = () => {
+    return (
+        <div className={"home-right-content"}>
+          <div className={"home-img-container"}>
+            <img src={BenGreenBg} alt={"Ben profile"} className={'home-img-content home-img-content-green'}/>
+            <img
+                src={BenOrangeBg}
+                alt={"Ben profile"}
+                className={'home-img-content home-img-content-orange'}
+            />
+          </div>
         </div>
+    )
+  }
+
+  return (
+      <section className="home body">
+        {getIntroSection()}
+        {getImageSection()}
       </section>
   );
 };

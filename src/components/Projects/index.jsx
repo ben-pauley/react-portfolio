@@ -1,11 +1,13 @@
-import Project from "../Project";
-import MouldyPotatoesImg from "../../assets/img/mouldyPotatoes.png";
-import PopcornpediaImg from "../../assets/img/popcornpedia.png";
-import NoteTakerImg from "../../assets/img/noteTaker.png";
-import WeatherDashboardImg from "../../assets/img/weatherDashboard.png";
-import BookSearchImg from "../../assets/img/bookSearch.png";
-import TeamProfileGenImg from "../../assets/img/teamProfileGen.png";
+import Project from "../Project"
+import MouldyPotatoesImg from "../../assets/img/mouldyPotatoes.png"
+import PopcornpediaImg from "../../assets/img/popcornpedia.png"
+import NoteTakerImg from "../../assets/img/noteTaker.png"
+import WeatherDashboardImg from "../../assets/img/weatherDashboard.png"
+import BookSearchImg from "../../assets/img/bookSearch.png"
+import TeamProfileGenImg from "../../assets/img/teamProfileGen.png"
+import "./index.css"
 
+// TODO: move below to constants
 const projectInfo = [
   {
     id: 1,
@@ -67,27 +69,27 @@ const projectInfo = [
     descLn1: "Back-End CMS Application",
     descLn2: "",
   },
-];
+]
 
 const projectComponents = projectInfo.map((x) => (
-  <Project
-    repo={x.repo}
-    deployed={x.deployed}
-    img={x.img}
-    alt={x.alt}
-    title={x.title}
-    descLn1={x.descLn1}
-    descLn2={x.descLn2}
-  />
-));
+    <Project
+        repo={x.repo}
+        deployed={x.deployed}
+        img={x.img}
+        alt={x.alt}
+        title={x.title}
+        descLn1={x.descLn1}
+        descLn2={x.descLn2}
+    />
+))
 
 const Projects = () => {
   return (
-    <section className="project section" id="projects">
-      <h2 className="section-title">Projects</h2>
-      <div className="project-container body">{projectComponents}</div>
-    </section>
+      <section className="project section" id="projects">
+        <h2 className="section-title">Projects</h2>
+        <div className="project-container body">{projectComponents}</div>
+      </section>
   );
-};
+}
 
-export default Projects;
+export default Projects

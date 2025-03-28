@@ -1,0 +1,72 @@
+.project-img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.image-overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.25s;
+  width: 100%;
+}
+
+.image-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image-overlay:hover > * {
+  transform: translateY(0);
+}
+
+.overlay-title {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.overlay-desc {
+  margin-top: 0.25em;
+  text-align: center;
+}
+
+.repo-btn {
+  position: absolute;
+  right: -22px;
+  bottom: 0;
+}
+
+.repo-icon {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  width: max-content;
+}
+
+.repo-icon:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 875px) {
+
+  .image-overlay:hover {
+    opacity: 1;
+  }
+
+  .repo-icon {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+}
